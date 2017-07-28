@@ -1,0 +1,352 @@
+<!--声明文档类型-->
+<!DOCTYPE html>
+<!--1.指定 lang语言 基础-->
+<html lang="zh-cn">
+<head>
+    <!--支持编码格式-->
+    <meta charset="UTF-8">
+    <!--keywords关键字，description描述内容，写在content里写-->
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <!--2.指定视口声明，viewport视口,内容=宽度与设备宽度一致，初始，缩放倍率为1，用户-缩放，不允许-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <!-- 3.指定 跨IE 浏览器 最高的兼容性（内核渲染页面）-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title></title>
+    <!-- 4.引入bootstrap.css文件-->
+    <!--连接 相应的样式表 类型css文本 链接地址-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/mouse_index.css"/>
+    <!--5、引入两个 兼容性 js文件-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--1.导航条-->
+<nav id="nav" class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand"><img src="imgs/logo.png" alt="logo加载失败"/></a>
+            <button id="btn-menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- -->
+        <div class="navbar-collapse collapse" id="myCollapse">
+            <form class="navbar-form navbar-right hidden-sm" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索产品...">
+                </div>
+                <button type="submit" class="btn btn-primary">搜索</button>
+            </form>
+            <!-- 导航列表-->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="">电竞系列</a>
+                </li>
+                <li>
+                    <a href="cybercafe.html">网吧系列</a>
+                </li>
+                <li>
+                    <a href="">生活系列</a>
+                </li>
+                <li>
+                    <a href="">电竞文化</a>
+                </li>
+                <li>
+                    <a href="">新品专题</a>
+                </li>
+                <li class="drop-down hidden-sm">
+                    <a href="">服务中心
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="menu-lists">
+                        <li>
+                            <a href="">售后中心</a>
+                        </li>
+                        <li>
+                            <a href="">下载中心</a>
+                        </li>
+                        <li>
+                            <a href="">常见问题</a>
+                        </li>
+                        <li>
+                            <a href="">活动中心</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="drop-down">
+                    <a href="">品牌中心
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="menu-lists">
+                        <li>
+                            <a href="">关于达尔优</a>
+                        </li>
+                        <li>
+                            <a href="">新闻中心</a>
+                        </li>
+                        <li>
+                            <a href="">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="">新闻中心</a>
+                        </li>
+                        <li>
+                            <a href="">品牌升级声明</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="height: 50px" class="visible-md-*"></div>
+<!--2.轮播-->
+<div class="container-fluid" style="padding: 0">
+    <div id="mySlider" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href=""><img src="imgs/slider/slider01.jpg"></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="imgs/slider/slider02.jpg"></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="imgs/slider/slider03.jpg"></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="imgs/slider/slider04.jpg"></a>
+            </div>
+            <div class="item">
+                <a href=""> <img src="imgs/slider/slider05.jpg"></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="imgs/slider/slider06.jpg"></a>
+            </div>
+
+        </div>
+        <!-- 左 / 右 方向按钮 -->
+        <a href="#mySlider" class="carousel-control left slider_prev" data-slide="prev">
+            <span class="glyphicon glyphicon-menu-left"></span>
+        </a>
+        <a href="#mySlider" class="carousel-control right slider_next" data-slide="next">
+            <span class="glyphicon glyphicon-menu-right"></span>
+        </a>
+        <!--导航小圆点-->
+        <ul class="carousel-indicators">
+            <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+            <li data-target="#mySlider" data-slide-to="1"></li>
+            <li data-target="#mySlider" data-slide-to="2"></li>
+            <li data-target="#mySlider" data-slide-to="3"></li>
+            <li data-target="#mySlider" data-slide-to="4"></li>
+            <li data-target="#mySlider" data-slide-to="5"></li>
+        </ul>
+    </div>
+</div>
+<!--3.主体内容-->
+<div id="content-box" class="container">
+    <div class="row">
+        <div class="col-md-7 col-xs-12" style="margin-bottom: 50px">
+            <div style="background-color:#fff;">
+                <div class="latest-news">
+                    <h4><a href="#">最新资讯</a></h4>
+                </div>
+                <div class="latest-news-slider">
+                    <img src="imgs/sq%20fm.jpg" width="100%" alt=""/>
+                </div>
+                <div class="latest-news-reading">
+                    <p class="n_title"><a href="#">生活不易哪有功夫去生气</a></p>
+                    <p class="n_time">2017-07-06</p>
+                    <p class="n_text">生活不易哪有功夫去生气</p>
+                    <p class="n_more"><a href="#"><span></span>阅读更多</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-xs-12" style="background-color:#fff;padding: 0">
+            <div class="act-rec">
+                <h4><a href="#">活动推荐</a></h4>
+            </div>
+            <div class="activity">
+                <div class="activity-title">
+                    <a href="#">国庆小长假礼物哪家多？达尔优贴吧奖品等你拿！</a>
+                </div>
+                <div class="activity-content">
+                    活动时间：__2016_年_9_月_30日_12点 （开始）—— __2016_年_10_月_10_日_12_点 （结束）<br>
+                    活动描述： 国庆小长假来啦！达尔优让你国庆呆在家收奖品！其中包括达尔优新近推出的键盘EK825！内置高端樱桃轴！
+                    每人每天抽奖次数可多达10次！奖品送完即止！么么哒，你还不动心么？！赶快行动哟！
+                </div>
+                <div class="activity-img">
+                    <img src="imgs/2016930.jpg" style="width:100% " alt=""/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color: #fff">
+    <div class="row">
+        <div class="col-xs-12 special-report">
+            <h4><a href="#">专题报道</a></h4>
+        </div>
+    </div>
+</div>
+    <div class="report-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12 report-img">
+                    <img src="imgs/EK820小图.jpg" alt=""/>
+                </div>
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="special-content">
+                        <p class="spe-p1">
+                            达尔优EK820办公机械键盘上市
+                        </p>
+                        <p class="spe-p2">
+                            北京时间2017年6月5日，DAREU（达尔优）发布EK820系列机械键盘，搭载凯华“巧克力轴”薄形开关，开启全新的机械键盘市场。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-2 hidden-xs">
+                    <p class="rec-left"> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="report-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12 report-img">
+                <img src="imgs/EK820小图.jpg" alt=""/>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="special-content">
+                    <p class="spe-p1">
+                        达尔优EK820办公机械键盘上市
+                    </p>
+                    <p class="spe-p2">
+                        北京时间2017年6月5日，DAREU（达尔优）发布EK820系列机械键盘，搭载凯华“巧克力轴”薄形开关，开启全新的机械键盘市场。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-xs">
+                <p class="rec-left"> </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="report-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12 report-img">
+                <img src="imgs/EK820小图.jpg" alt=""/>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="special-content">
+                    <p class="spe-p1">
+                        达尔优EK820办公机械键盘上市
+                    </p>
+                    <p class="spe-p2">
+                        北京时间2017年6月5日，DAREU（达尔优）发布EK820系列机械键盘，搭载凯华“巧克力轴”薄形开关，开启全新的机械键盘市场。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-xs">
+                <p class="rec-left"> </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="report-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12 report-img">
+                <img src="imgs/EK820小图.jpg" alt=""/>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="special-content">
+                    <p class="spe-p1">
+                        达尔优EK820办公机械键盘上市
+                    </p>
+                    <p class="spe-p2">
+                        北京时间2017年6月5日，DAREU（达尔优）发布EK820系列机械键盘，搭载凯华“巧克力轴”薄形开关，开启全新的机械键盘市场。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-xs">
+                <p class="rec-left"> </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="report-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12 report-img">
+                <img src="imgs/EK820小图.jpg" alt=""/>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="special-content">
+                    <p class="spe-p1">
+                        达尔优EK820办公机械键盘上市
+                    </p>
+                    <p class="spe-p2">
+                        北京时间2017年6月5日，DAREU（达尔优）发布EK820系列机械键盘，搭载凯华“巧克力轴”薄形开关，开启全新的机械键盘市场。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-xs">
+                <p class="rec-left"> </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row shopping-pla" style="height: 99px">
+        <div class="col-md-3  col-md-offset-1 col-xs-12 jd">
+            <img src="imgs/footerimga.jpg" alt=""/>
+            京东指定入口
+        </div>
+        <div class="col-md-3  col-xs-12 tm">
+            <img src="imgs/footerimg.jpg" alt=""/>
+            官方旗舰店
+        </div>
+        <div class="col-md-3 col-xs-12 sn">
+            <img src="imgs/footerimg.png" alt=""/>
+            苏宁旗舰店
+        </div>
+    </div>
+</div>
+<!--4.底部-->
+<div id="footer">
+    <div  class="container">
+        <span>
+            版权所有：东莞市铭冠电子科技有限公司 电话：4006-810-510 <a href="">粤ICP备10037798号-3</a>&nbsp;建议1600*980，IE9.0以上为最佳浏览模式
+            <a href="#">联系我们 </a>|<a href="#">关注我们</a>
+        </span>
+    </div>
+</div>
+<!--右侧定位-->
+<div class="right-affix hidden-sm hidden-xs">
+   <div class="top">
+       <a href="#"></a>
+   </div>
+    <div class="zixun">
+        <a href="#"></a>
+    </div>
+    <div class="phone">
+        <a href="#"></a>
+        <span>电话：400-810-510</span>
+    </div>
+</div>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

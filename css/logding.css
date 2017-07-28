@@ -1,0 +1,26 @@
+*{
+    color: #fff;
+}
+.d1{
+    /*filter定义了元素(通常是<img>)的可视效果(例如：模糊与饱和度)*/
+    filter: Alpha(Opacity=0, FinishOpacity=60, style=1, StartX=0, StartY=0, FinishX=100, FinishY=0);
+    width: 0%;
+    height: 25px;
+    position: absolute;
+    background: #0066cc;
+
+}
+.d2{
+    font-size: 9pt;
+    width: 100%;
+    text-align:center;
+    z-index: 10000;
+    margin-top: -10%;
+}
+#sb{
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+}
