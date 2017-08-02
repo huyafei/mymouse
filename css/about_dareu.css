@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: #fff;
+}
+#nav ul>li>a.active{
+    background-color: #FF5F00;
+}
+.dareu_idea_content{
+    text-align: center;
+    padding: 30px;
+}
+.dareu_idea_content>div{
+    height: 37px;
+    line-height: 37px;
+    border-right: 1px solid #ddd;
+}
+.dareu_idea_content>div>a{
+    display: block;
+    font-size: 16px;
+}
+.dareu_idea_content>div:last-child{
+    border: none;
+}
+.dareu_idea_content>div>a:hover{
+    color: #fff;
+    background: #ff330d
+}
+.dareu_idea_img{
+    padding: 0;
+}
+/*.dareu_idea_img>div{*/
+    /*height: 422px;*/
+    /*background: url("../imgs/about.jpg") no-repeat center top;*/
+/*}*/
+.brand_anno_title{
+    text-align: center;
+}
+.brand_anno{
+    margin-top: 20px;
+}
+.brand_anno_title>span{
+    color: #ff330d;
+    font: 20px "微软雅黑";
+}
+.brand_anno_content1>p,.brand_anno_content2>p{
+    font-size: 14px;
+    color: #5e5e5e;
+    line-height: 30px;
+    font-family: "Microsoft Yahei";
+    /*换行*/
+    word-break: break-all;
+}

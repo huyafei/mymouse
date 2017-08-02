@@ -1,0 +1,255 @@
+<!--声明文档类型-->
+<!DOCTYPE html>
+<!--1.指定 lang语言 基础-->
+<html lang="zh-cn">
+<head>
+    <!--支持编码格式-->
+    <meta charset="UTF-8">
+    <!--keywords关键字，description描述内容，写在content里写-->
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <!--2.指定视口声明，viewport视口,内容=宽度与设备宽度一致，初始，缩放倍率为1，用户-缩放，不允许-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <!-- 3.指定 跨IE 浏览器 最高的兼容性（内核渲染页面）-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title></title>
+    <!-- 4.引入bootstrap.css文件-->
+    <!--连接 相应的样式表 类型css文本 链接地址-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/mouse_index.css">
+    <link rel="stylesheet" href="css/contact_us.css ">
+    <!--5、引入两个 兼容性 js文件-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+<!--1.导航条-->
+<nav id="nav" class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand"><img src="imgs/logo.png" alt="logo加载失败"/></a>
+            <button id="btn-menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- -->
+        <div class="navbar-collapse collapse" id="myCollapse">
+            <form class="navbar-form navbar-right hidden-sm" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索产品...">
+                </div>
+                <button type="submit" class="btn btn-primary">搜索</button>
+            </form>
+            <!-- 导航列表-->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="mouse_index.html">电竞系列</a>
+                </li>
+                <li>
+                    <a href="cybercafe.html">网吧系列</a>
+                </li>
+                <li>
+                    <a href="">生活系列</a>
+                </li>
+                <li>
+                    <a href="">电竞文化</a>
+                </li>
+                <li>
+                    <a href="">新品专题</a>
+                </li>
+                <li class="drop-down hidden-sm">
+                    <a href="">服务中心
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="menu-lists">
+                        <li>
+                            <a href="">售后中心</a>
+                        </li>
+                        <li>
+                            <a href="">下载中心</a>
+                        </li>
+                        <li>
+                            <a href="">常见问题</a>
+                        </li>
+                        <li>
+                            <a href="">活动中心</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="drop-down">
+                    <a href="about_darues.html" class="active">品牌中心
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="menu-lists">
+                        <li>
+                            <a href="about_darues.html" >关于达尔优</a>
+                        </li>
+                        <li>
+                            <a href="">新闻中心</a>
+                        </li>
+                        <li>
+                            <a href="">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="">新闻中心</a>
+                        </li>
+                        <li>
+                            <a href="">品牌升级声明</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="height: 50px" class="visible-md-*"></div>
+<div class="container">
+    <div class="row" style="margin: 30px 0">
+        <div class="col-md-6 col-sm-12">
+            <div class="contact_dat">
+                <img class="img-responsive" src="imgs/contactsa.jpg" alt="">
+                <p style="margin-top: 10px">工厂前台电话：0769-86308816 </p>
+                <p>电话：+86-769-81816306</p>
+                <p>传真：+86-769-86308826  </p>
+                <p>邮编：523290</p>
+                <p>公司地址：东莞市石碣镇桔洲第三工业区石单路262号铭冠电子科技有限公司</p>
+                <p >达尔优全国统一服务热线:<b style="color: #ff330d;font-size: 2em;"> 4006-810-510</b></p>
+                <p>服务时间：周一到周五：9：00-12：00   13：30-21：00</p>
+                <p>周六到周日：9：00-21：00（全天）</p>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <div class="contacts_right">
+                <div class="contacts_right_img">
+                    <img class="img-responsive" src="imgs/con—dingyue.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <!--百度地图容器-->
+    <div class="row">
+        <div class="col-md-12">
+            <div style="width:100%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+        </div>
+    </div>
+</div>
+<!--4.底部-->
+<div id="footer">
+    <div  class="container">
+        <span>
+            版权所有：东莞市铭冠电子科技有限公司 电话：4006-810-510 <a href="">粤ICP备10037798号-3</a>&nbsp;建议1600*980，IE9.0以上为最佳浏览模式
+            <a href="#">联系我们 </a>|<a href="#">关注我们</a>
+        </span>
+    </div>
+</div>
+<!--6、引入 两个JS插件文件-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--7、引入检查文件,正式上线时要删除-->
+<script src="js/bootlint.js"></script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(120.362381,31.54601);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{title:"胡亚飞的地址",content:"地址：无锡新区湘江路润泽雅居（北门）9栋<br/>电话：15061509527",point:"120.362179|31.54581",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+    ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor:"#808080",
+                color:"#333",
+                cursor:"pointer"
+            });
+
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://map.baidu.com/image/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+</body>
+</html>
